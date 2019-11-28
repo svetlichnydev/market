@@ -1,0 +1,23 @@
+html{
+	box-sizing: border-box;
+}
+*, *::after, *::before{
+	box-sizing: inherit;
+}
+body{
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+}
