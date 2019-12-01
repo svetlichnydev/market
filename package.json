@@ -18,7 +18,10 @@
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mixup": "^0.1.2",
+    "rateyo": "^2.3.5"
+  },
   "description": "",
   "browserslist": [
     "last 8 versions"

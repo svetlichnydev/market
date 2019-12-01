@@ -37,7 +37,8 @@ gulp.task('browser-sync', function(){
 
 gulp.task('script', function(){
   return gulp.src([
-    'node_modules/slick-carousel/slick/slick.min.js'
+    'node_modules/slick-carousel/slick/slick.min.js',
+    'node_modules/rateyo/min/jquery.rateyo.min.js'
   ])
   .pipe(concat('lib.min.js'))
   .pipe(uglify())
@@ -48,7 +49,8 @@ gulp.task('style', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.scss',
-    'node_modules/slick-carousel/slick/slick-theme.scss'
+    'node_modules/slick-carousel/slick/slick-theme.scss',
+    'node_modules/rateyo/min/jquery.rateyo.min.css'
   ])
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(concat('lib.min.css'))

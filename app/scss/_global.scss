@@ -35,3 +35,17 @@ li{
     max-width: 1170px;
     padding: 0 15px;
 }
+
+@mixin btn{
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+@mixin bg_contain{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
