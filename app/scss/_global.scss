@@ -39,7 +39,7 @@ li{
 @mixin btn{
     cursor: pointer;
     white-space: nowrap;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     text-align: center;
 }
@@ -48,4 +48,20 @@ li{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@mixin flex{
+    display: flex;
+	align-items: center;
+}
+
+@mixin active{
+    background-color: #fff;
+    color: $blue;
+    border: 1px solid $blue;
+}
+@mixin blue-active{
+    background-color: $blue;
+    color: #fff;
+    border: 1px solid #fff;
 }
