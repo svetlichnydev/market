@@ -531,7 +531,7 @@
 	&-price{
 		height: 30px;
 		border-radius: 15px;
-		background-color: $lightblue;
+		background-color: $lightwhite;
 		justify-content: center;
 		padding: 0px 15px;
 		font-size: 15px;
@@ -621,3 +621,126 @@
 	}
 }
 // end follorers
+
+// start totals
+.totals{
+	background-color: #212225;
+}
+.totals__inner{
+	@include flex;
+	justify-content: space-between;
+	padding: 90px 0 95px;
+}
+.total__item{
+	text-align: center;
+	&-icon{
+		font-family: 'Linearicons';
+		font-size: 48px;
+		line-height: 36px;
+		margin-bottom: 50px;
+	}
+	&-value{
+		font-size: 36px;
+		line-height: 36px;		
+	}
+	&-briefcase{
+		color: $lightorange;
+	}
+	&-cloud{
+		color: $lightblue;
+	}
+	&-smile{
+		color: $lightgreen;
+	}
+	&-users{
+		color: $lightred;
+	}
+	&-title{
+		color: #fff;
+		font-size: 18px;
+		line-height: 36px;
+	}
+}
+// end totals
+
+// start advantages
+.advantages{
+	background-color: #fff;
+	padding: 112px 0 120px;
+	&-title{
+		font-size: 36px;
+		line-height: 28px;
+		color: #000;
+		text-align: center;
+		margin-bottom: 35px;
+		span{
+			color: $blue;
+		}
+	}
+	&-brief{
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 30px;
+		max-width: 680px;
+		text-align: center;
+		color: $lighttext;
+		margin-bottom: 55px;
+	}
+}
+.advantages__inner{
+	@include flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.advantages__item{
+	max-width: 360px;
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+	padding: 50px 30px 60px;
+	margin-bottom: 30px;
+	position: relative;
+	&-title{
+		font-size: 24px;
+		color: #000;
+		margin-bottom: 30px;
+	}
+	&-text{
+		color: $lighttext;
+	}
+	&-icon{
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 45px;
+		font-family: 'Linearicons';
+	}
+	&-icon1{
+		color:$blue;
+	}
+	&-icon2{
+		color:$lightmagenta;
+	}
+	&-icon3{
+		color:$lightgreen;
+	}
+	&-icon4{
+		color: $lightorange;
+	}
+	&-icon5{
+		color:$lightblue;
+	}
+	&-icon6{
+		color:$lightred;
+	}
+	&-number{
+		position: absolute;
+		opacity: .2;
+		color: #5c87f8;
+		font-size: 48px;
+		top: 20px;
+		left: 20px;
+	}
+}
+// end advantages
+
