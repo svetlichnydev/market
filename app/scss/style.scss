@@ -744,3 +744,56 @@
 }
 // end advantages
 
+// start start
+.start__inner{
+	display: flex;
+}
+.start__item{
+	padding: 0 15px;
+	display: inline-block;
+	width: 50%;
+	@include bg_contain;
+	background-size: cover;
+	background-size: 960px 560px;
+	text-align: center;
+	color: #fff;
+	&-sell{
+		background-image: url(../images/sell-bg.jpg);
+		button{
+			color: $blue;
+		}
+	}
+	&-buy{
+		background-image: url(../images/buy-bg.jpg);
+		button{
+			color: $magenta;
+		}
+	}
+	&-icon{
+		margin: 100px auto 50px;
+		width: 125px;
+		height: 105px;
+		@include bg_contain;
+	}
+	&-title	{
+		font-size: 36px;
+		line-height: 30px;
+	}
+	&-text{
+		margin: 30px auto 45px;
+		line-height: 30px;
+		max-width: 590px;
+	}
+	&-button{
+		margin-bottom: 100px;
+		@include btn;
+		background-color: #fff;
+		height: 56px;
+		border-radius: 28px;
+		padding: 0 28px;
+		&:hover{
+			@include blue-active;
+		}
+	}
+}
+// end start
