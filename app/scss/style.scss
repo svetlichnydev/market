@@ -462,6 +462,7 @@
 .products{
 	background-color:  $bg-light;
 	padding: 120px 0;
+	text-align: center;
 }
 .products__categories{
 	@include flex;
@@ -571,14 +572,13 @@
 	cursor: pointer;
 }
 .products__all-btn{
+	@include btn;
 	height: 54px;
-	@include flex;
 	border-radius: 27px;
 	@include blue-active;
 	padding: 0px 32px;
 	margin: 25px auto 0;
 	outline: none;
-	cursor: pointer;
 }
 .products__all-btn:hover{
 	@include active;
@@ -664,18 +664,21 @@
 // end totals
 
 // start advantages
+.title{
+	font-size: 36px;
+	line-height: 28px;
+	color: #000;
+	text-align: center;
+	span{
+		color: $blue;
+	}
+}
+
 .advantages{
 	background-color: #fff;
 	padding: 112px 0 120px;
 	&-title{
-		font-size: 36px;
-		line-height: 28px;
-		color: #000;
-		text-align: center;
 		margin-bottom: 35px;
-		span{
-			color: $blue;
-		}
 	}
 	&-brief{
 		margin: 0 auto;
@@ -797,3 +800,101 @@
 	}
 }
 // end start
+
+// start feedback
+.feedback{
+	padding: 120px 0;
+	text-align: center;
+	&-title{
+		margin-bottom: 35px;
+	}	
+	&-text{
+		margin: 0 auto 60px;
+		line-height: 30px;
+		max-width: 675px;
+		text-align: center;
+	}
+	&-btn{
+		@include btn;
+		@include blue-active;
+		height: 56px;
+		border-radius: 28px;
+		padding: 0px 35px;
+		margin: 60px auto 0;
+		&:hover{
+			@include active;
+		}
+	}
+}
+.feedback__inner{
+	@include flex;
+	justify-content: space-between;
+}
+.feedback__item{
+	padding: 50px 40px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+	position: relative;
+	max-width: 555px;
+	width: 100%;
+	padding-right: 60px;
+	&::before{
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 2px;
+		background-color: $blue;
+		left: 0;
+		top: 0;
+	}
+	&-title{
+		margin-bottom: 30px;
+		position: relative;
+		&::after{
+			top: 0;
+			right: 0;
+			position: absolute;
+			content: 'bubble';
+			font-family: 'Linearicons';
+			font-size: 60px;
+			color: #e8e8e8;
+			line-height: 60px;
+		}
+	}
+	&-icon{
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		@include bg_contain;
+		display:inline-block;
+		 vertical-align:middle;
+		 margin-right: 18px;
+	}	
+	&-name{
+		height: 100%;
+		display:inline-block;
+		vertical-align:middle;
+		font-size: 20px;
+		color: #000;
+	}
+	&-position{
+		margin-top: 10px;
+		font-size: 16px;
+		color: $lighttext;
+	}
+	&-text{
+		color: $lighttext;
+		line-height: 30px;	
+	}
+}
+
+.BG {
+	position: absolute;
+	left: 974px;
+	top: 7506px;
+	width: 555px;
+	height: 315px;
+	z-index: 165;
+  }
+  
+// end feedback
