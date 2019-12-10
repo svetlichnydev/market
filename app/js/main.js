@@ -28,6 +28,7 @@ $(function () {
     rating: 4.5,
     spacing: "4px"
   });
+  
   $(".rate-small").rateYo({
     starWidth: "12px",
     readOnly: true,

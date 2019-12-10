@@ -42,7 +42,8 @@ li{
     border: 1px solid transparent;
     outline: none;
     text-align: center;
-}
+    transition: all .5s;
+    }
 
 @mixin bg_contain{
     background-position: center;
@@ -64,4 +65,10 @@ li{
     background-color: $blue;
     color: #fff;
     border: 1px solid #fff;
+}
+@mixin btn56{
+    @include btn;
+    height: 56px;
+    border-radius: 28px;
+    padding: 0 28px;
 }
