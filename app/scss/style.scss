@@ -10,6 +10,7 @@
 	justify-content: space-between;
 	@include flex; 
 }
+
 .header__logo{
 	font-size: 30px;
 	a{
@@ -927,9 +928,11 @@
 		padding: 30px;
 		border-bottom: 1px solid $border;
 		text-align: left;
-		//max-height: 186px;
-		//height: 100%;
-		//overflow: hidden;
+	}
+	&-content-strict{
+		max-height: 140px;
+		height: 100%;
+		overflow: hidden;
 	}
 	&-title{
 		font-weight: 500;
@@ -941,7 +944,7 @@
 		color: $lighttext;
 		line-height: 30px;
 	}
-	&-fotter{
+	&-footer{
 		@include flex;
 		padding: 14px 30px;
 		justify-content: space-between;
@@ -963,7 +966,7 @@
 .date{
 	@include flex;
 	height: 30px;
-	color: #999999;
+	color: $darktext;
 	padding-left: 24px;
 	position: relative;
 	font-size: 15px;
@@ -1081,3 +1084,176 @@
 	}
 }
 // end joinus
+
+// start footer
+.footer{
+	background-color: #262b30;
+	color: $footer;
+	font-size: 15px;
+	a{
+		color: $footer;
+	}
+}
+.footer__inner{
+	padding: 112px 0;
+	@include flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.footer__logo{
+	margin-bottom: 24px;
+	a{
+		font-size: 24px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 24px;
+		@include flex;
+		align-items: center;
+		span{
+			color: $blue;
+		}
+	}
+	img{
+		margin-right: 7px;
+	}
+}
+.footer__item{
+	width: 100%;
+	&-info{
+		max-width: 265px;
+	}
+	&-text{
+		margin-bottom: 24px;
+		line-height: 28px;
+	}
+	&-phone,
+	&-mail,
+	&-address{
+		line-height: 26px;
+		margin-bottom: 7px;
+		padding-left: 30px;
+		position: relative;
+	}
+	&-phone::before,
+	&-mail::before,
+	&-address::before{
+		line-height: 16px;
+		font-size: 16px;		
+		font-family: 'Linearicons';
+		color: #fff;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+	}	
+	&-phone::before{
+		content: 'phone-handset'; 
+	}
+	&-mail::before{
+		content: 'envelope'; 
+	}
+	&-address::before{
+		content: 'map-marker'; 
+	}
+	&-title{
+		font-size: 18px;
+		line-height: 42px;
+		margin-bottom: 28px;
+		color: #fff;
+	}
+	&-lst{
+		max-width: 170px;
+	}
+	&-subscribe{
+		max-width: 360px;
+	}
+	&-list li{
+		line-height: 17px;
+		margin-bottom: 12px;
+	}
+	&-social{
+		li{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		a{
+			width: 42px;
+			height: 42px;
+			background-color: green;
+			border-radius: 50%;
+			text-align: center;
+			padding-top: 13px;
+		}
+		svg{
+			width: 16px;
+			height: 16px;
+			path{
+				fill: #fff;
+			}
+		}
+		.facebook{
+			background-color: #395799;
+		}
+		.twitter{
+			background-color: #19b2f5;
+		}
+		.google{
+			background-color: #f05b44;
+		}
+		.pinterest{
+			background-color: #9c0c1c;
+		}
+		.linkedin{
+			background-color: #0da6be;
+		}
+		.dribble{
+			background-color: #ea4c89;
+		}
+	}
+	&-form{
+		margin-top: 35px;
+		margin-bottom: 48px;
+		position: relative;
+		font-size: 15px;
+		input{
+			width: 100%;
+			height: 50px;
+			border-radius: 25px;
+			background-color: #fff;
+			border: none;
+			padding-left: 28px;
+			padding-right: 118px;
+			outline: none;
+			color: #ababab;
+		}
+		button{
+			position: absolute;
+			right: 0;
+			height: 50px;
+			border-radius: 25px;
+			@include blue-active;
+			border: 1px solid $blue;
+			padding: 0 28px;
+			cursor: pointer;
+			transition: all .5s;
+			outline: none;
+			&:hover{
+				@include active;
+			}
+		}
+	}
+}
+.footer__bottom{
+	background-color: #192027;
+	text-align: center;
+	padding: 40px 0;
+	&-text{
+		font-size: 15px;
+		line-height: 27px;
+		color: $darktext;
+		span{
+			color: #fff;
+		}
+	}
+}
+// end footer
